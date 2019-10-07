@@ -1,0 +1,1371 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Sep 10 11:04:31 2019
+# Process ID: 6664
+# Current directory: D:/Projects/2019/OMD/template/template.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: D:/Projects/2019/OMD/template/template.runs/synth_1/TOP.vds
+# Journal file: D:/Projects/2019/OMD/template/template.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xcvu9p-flga2104-2L-e -fsm_extraction sequential
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1456 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1508.754 ; gain = 142.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/TOP.vhd:45]
+INFO: [Synth 8-3491] module 'encrypt' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:35' bound to instance 'encrypt_inst' of component 'encrypt' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/TOP.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'encrypt' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:62]
+INFO: [Synth 8-3491] module 'blake512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:37' bound to instance 'blake512_inst' of component 'blake512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:250]
+INFO: [Synth 8-638] synthesizing module 'blake512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:51]
+INFO: [Synth 8-3491] module 'reg_64_v00' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v00.vhd:34' bound to instance 'register_64_v00' of component 'reg_64_v00' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:472]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v00' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v00.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v00' (1#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v00.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v01' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v01.vhd:34' bound to instance 'register_64_v01' of component 'reg_64_v01' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:481]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v01' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v01.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v01' (2#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v01.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v02' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v02.vhd:34' bound to instance 'register_64_v02' of component 'reg_64_v02' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:490]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v02' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v02.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v02' (3#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v02.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v03' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v03.vhd:34' bound to instance 'register_64_v03' of component 'reg_64_v03' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:499]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v03' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v03.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v03' (4#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v03.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v04' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v04.vhd:34' bound to instance 'register_64_v04' of component 'reg_64_v04' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:508]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v04' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v04.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v04' (5#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v04.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v05' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v05.vhd:34' bound to instance 'register_64_v05' of component 'reg_64_v05' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:517]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v05' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v05.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v05' (6#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v05.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v06' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v06.vhd:34' bound to instance 'register_64_v06' of component 'reg_64_v06' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:526]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v06' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v06.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v06' (7#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v06.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v07' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v07.vhd:34' bound to instance 'register_64_v07' of component 'reg_64_v07' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:535]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v07' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v07.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v07' (8#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v07.vhd:44]
+INFO: [Synth 8-3491] module 'reg_64_v08' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v08.vhd:34' bound to instance 'register_64_v08' of component 'reg_64_v08' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:544]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v08' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v08.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v08' (9#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v08.vhd:45]
+INFO: [Synth 8-3491] module 'reg_64_v09' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v09.vhd:34' bound to instance 'register_64_v09' of component 'reg_64_v09' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:554]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v09' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v09.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v09' (10#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v09.vhd:45]
+INFO: [Synth 8-3491] module 'reg_64_v10' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v10.vhd:34' bound to instance 'register_64_v10' of component 'reg_64_v10' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:564]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v10' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v10.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v10' (11#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v10.vhd:45]
+INFO: [Synth 8-3491] module 'reg_64_v11' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v11.vhd:34' bound to instance 'register_64_v11' of component 'reg_64_v11' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:574]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v11' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v11.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v11' (12#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v11.vhd:45]
+INFO: [Synth 8-3491] module 'reg_64_v12' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v12.vhd:34' bound to instance 'register_64_v12' of component 'reg_64_v12' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:584]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v12' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v12.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v12' (13#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v12.vhd:45]
+INFO: [Synth 8-3491] module 'reg_64_v13' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v13.vhd:34' bound to instance 'register_64_v13' of component 'reg_64_v13' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:594]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v13' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v13.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v13' (14#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v13.vhd:45]
+INFO: [Synth 8-3491] module 'reg_64_v14' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v14.vhd:34' bound to instance 'register_64_v14' of component 'reg_64_v14' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:604]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v14' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v14.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v14' (15#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v14.vhd:45]
+INFO: [Synth 8-3491] module 'reg_64_v15' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v15.vhd:34' bound to instance 'register_64_v15' of component 'reg_64_v15' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:614]
+INFO: [Synth 8-638] synthesizing module 'reg_64_v15' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v15.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'reg_64_v15' (16#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/reg_64_v15.vhd:45]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i0' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:624]
+INFO: [Synth 8-638] synthesizing module 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'perm' (17#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:43]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i0' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:631]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i1' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:638]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i1' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:645]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i2' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:652]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i2' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:659]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i3' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:666]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i3' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:673]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i4' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:680]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i4' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:687]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i5' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:694]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i5' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:701]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i6' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:708]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i6' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:715]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_r0_i7' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:722]
+INFO: [Synth 8-3491] module 'perm' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/perm.vhd:35' bound to instance 'perm_2i_1_r0_i7' of component 'perm' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:729]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g00_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:742]
+INFO: [Synth 8-638] synthesizing module 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'g_function' (18#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:50]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g01_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:762]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g02_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:782]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g03_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:802]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g04_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:822]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g05_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:842]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g06_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:862]
+INFO: [Synth 8-3491] module 'g_function' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/g_function_1.vhd:35' bound to instance 'g07_function' of component 'g_function' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:882]
+INFO: [Synth 8-3491] module 'round_f_controller' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/round_f_controller.vhd:34' bound to instance 'controller' of component 'round_f_controller' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:897]
+INFO: [Synth 8-638] synthesizing module 'round_f_controller' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/round_f_controller.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'round_f_controller' (19#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/round_f_controller.vhd:47]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_00' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:920]
+INFO: [Synth 8-638] synthesizing module 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1' (20#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:43]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_01' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:928]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_02' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:936]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_03' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:945]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_04' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:953]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_05' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:961]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_06' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:969]
+INFO: [Synth 8-3491] module 'mux2_1' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/imports/new/mux2_1.vhd:34' bound to instance 'hash64_07' of component 'mux2_1' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:977]
+INFO: [Synth 8-256] done synthesizing module 'blake512' (21#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/blake512.vhd:51]
+INFO: [Synth 8-3491] module 'omd_controller' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/omd_controller.vhd:36' bound to instance 'omd_controller_inst' of component 'omd_controller' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:262]
+INFO: [Synth 8-638] synthesizing module 'omd_controller' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/omd_controller.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'omd_controller' (22#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/omd_controller.vhd:58]
+INFO: [Synth 8-3491] module 'mux2_1_512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux2_1_512.vhd:34' bound to instance 'mux_delta_NONCE' of component 'mux2_1_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'mux2_1_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux2_1_512.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1_512' (23#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux2_1_512.vhd:41]
+INFO: [Synth 8-3491] module 'ntz_i' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ntz_i.vhd:36' bound to instance 'ntz_i_LUT' of component 'ntz_i' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'ntz_i' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ntz_i.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ntz_i' (24#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ntz_i.vhd:41]
+INFO: [Synth 8-3491] module 'mux2_1_4' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux2_1_4.vhd:34' bound to instance 'muxx_rd_addr_ram_L' of component 'mux2_1_4' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:305]
+INFO: [Synth 8-638] synthesizing module 'mux2_1_4' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux2_1_4.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux2_1_4' (25#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux2_1_4.vhd:41]
+INFO: [Synth 8-3491] module 'ram16x512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ram16x512.vhd:28' bound to instance 'ram_L' of component 'ram16x512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:400]
+INFO: [Synth 8-638] synthesizing module 'ram16x512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ram16x512.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ram16x512' (26#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ram16x512.vhd:37]
+INFO: [Synth 8-3491] module 'mux4_1_1024' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux4_1_1024.vhd:34' bound to instance 'mux_msg_blake' of component 'mux4_1_1024' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:408]
+INFO: [Synth 8-638] synthesizing module 'mux4_1_1024' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux4_1_1024.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux4_1_1024' (27#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux4_1_1024.vhd:43]
+INFO: [Synth 8-3491] module 'mux4_1_512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux4_1_512.vhd:34' bound to instance 'mux_IV512_blake' of component 'mux4_1_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:420]
+INFO: [Synth 8-638] synthesizing module 'mux4_1_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux4_1_512.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'mux4_1_512' (28#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux4_1_512.vhd:43]
+INFO: [Synth 8-3491] module 'ram256x512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ram256x512.vhd:28' bound to instance 'ram_delta' of component 'ram256x512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:428]
+INFO: [Synth 8-638] synthesizing module 'ram256x512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ram256x512.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ram256x512' (29#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/ram256x512.vhd:37]
+INFO: [Synth 8-3491] module 'mux4_1_512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/mux4_1_512.vhd:34' bound to instance 'mux_wr_data_ram_delta' of component 'mux4_1_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:436]
+INFO: [Synth 8-3491] module 'reg_en_1024' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_1024.vhd:34' bound to instance 'register_msg' of component 'reg_en_1024' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:447]
+INFO: [Synth 8-638] synthesizing module 'reg_en_1024' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_1024.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'reg_en_1024' (30#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_1024.vhd:42]
+INFO: [Synth 8-3491] module 'reg_en_512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_512.vhd:34' bound to instance 'register_ctxt' of component 'reg_en_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:455]
+INFO: [Synth 8-638] synthesizing module 'reg_en_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_512.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'reg_en_512' (31#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_512.vhd:42]
+INFO: [Synth 8-3491] module 'reg_en_512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_512.vhd:34' bound to instance 'register_delta_NONCE_00' of component 'reg_en_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:462]
+INFO: [Synth 8-3491] module 'reg_en_512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_512.vhd:34' bound to instance 'register_delta_NONCE' of component 'reg_en_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:468]
+INFO: [Synth 8-3491] module 'reg_en_512' declared at 'D:/Projects/2019/OMD/template/template.srcs/sources_1/new/reg_en_512.vhd:34' bound to instance 'register_tage' of component 'reg_en_512' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:475]
+INFO: [Synth 8-256] done synthesizing module 'encrypt' (32#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/encrypt.vhd:62]
+INFO: [Synth 8-4471] merging register 's_WR_EN_RAM_L_reg' into 's_PTXT_DATA_VALID_reg' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/TOP.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element s_WR_EN_RAM_L_reg was removed.  [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/TOP.vhd:110]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (33#1) [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/TOP.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1572.484 ; gain = 205.820
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1590.352 ; gain = 223.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1590.352 ; gain = 223.688
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Projects/2019/OMD/template/template.srcs/constrs_1/new/TOP.xdc]
+Finished Parsing XDC File [D:/Projects/2019/OMD/template/template.srcs/constrs_1/new/TOP.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Projects/2019/OMD/template/template.srcs/constrs_1/new/TOP.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1796.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1796.586 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1796.586 ; gain = 429.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flga2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1796.586 ; gain = 429.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1796.586 ; gain = 429.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'round_f_controller'
+INFO: [Synth 8-5546] ROM "en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ready" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "round_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'start_compute_delta_NONCE_reg' into 'reg_en_delta_NONCE_00_reg' [D:/Projects/2019/OMD/template/template.srcs/sources_1/new/omd_controller.vhd:82]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'omd_controller'
+INFO: [Synth 8-5546] ROM "PTXT_RDY" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CTXT_DATA_VALID" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CTXT_CTRL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd_addr_ram_delta_temp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_delta_reg' in module 'encrypt'
+INFO: [Synth 8-5587] ROM size for "reg_en_delta_NONCE" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "sel_mux_wr_data_ram_delta" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delta_NONCE_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "wr_en_ram_delta" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "wr_addr_ram_delta" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE8 |                            00000 |                            00000
+                 iSTATE6 |                            00001 |                            00001
+                 iSTATE4 |                            00010 |                            00010
+                 iSTATE2 |                            00011 |                            00011
+                iSTATE15 |                            00100 |                            00100
+                iSTATE14 |                            00101 |                            00101
+                iSTATE11 |                            00110 |                            00110
+                iSTATE10 |                            00111 |                            00111
+                iSTATE13 |                            01000 |                            01000
+                iSTATE12 |                            01001 |                            01001
+                 iSTATE9 |                            01010 |                            01010
+                 iSTATE7 |                            01011 |                            01011
+                 iSTATE1 |                            01100 |                            01100
+                 iSTATE0 |                            01101 |                            01101
+                  iSTATE |                            01110 |                            01110
+                iSTATE16 |                            01111 |                            01111
+                 iSTATE5 |                            10000 |                            10000
+                 iSTATE3 |                            10001 |                            10001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'round_f_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                iSTATE18 |                           000000 |                           000000
+                 iSTATE6 |                           000001 |                           100000
+                 iSTATE4 |                           000010 |                           100001
+                iSTATE15 |                           000011 |                           000001
+                iSTATE11 |                           000100 |                           000010
+                iSTATE31 |                           000101 |                           100011
+                 iSTATE9 |                           000110 |                           100100
+                 iSTATE8 |                           000111 |                           000011
+                 iSTATE0 |                           001000 |                           000100
+                iSTATE30 |                           001001 |                           000101
+                iSTATE24 |                           001010 |                           000110
+                iSTATE22 |                           001011 |                           000111
+                iSTATE28 |                           001100 |                           001000
+                iSTATE27 |                           001101 |                           001001
+                iSTATE20 |                           001110 |                           001010
+                iSTATE17 |                           001111 |                           001011
+                 iSTATE7 |                           010000 |                           001100
+                 iSTATE5 |                           010001 |                           001101
+                 iSTATE2 |                           010010 |                           001110
+                  iSTATE |                           010011 |                           001111
+                iSTATE12 |                           010100 |                           010000
+                iSTATE23 |                           010101 |                           011000
+                iSTATE21 |                           010110 |                           011001
+                iSTATE14 |                           010111 |                           011010
+                iSTATE13 |                           011000 |                           011011
+                 iSTATE3 |                           011001 |                           011100
+                 iSTATE1 |                           011010 |                           011101
+                iSTATE29 |                           011011 |                           011110
+                iSTATE10 |                           011100 |                           010001
+                iSTATE26 |                           011101 |                           010100
+                iSTATE25 |                           011110 |                           010101
+                iSTATE19 |                           011111 |                           010110
+                iSTATE16 |                           100000 |                           010111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'omd_controller'
+INFO: [Synth 8-6904] The RAM "ram16x512:/ram_reg" of size (depth=16 x width=512) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                             0000 |                           000000
+                 iSTATE0 |                             0001 |                           000001
+                 iSTATE9 |                             0010 |                           000010
+                 iSTATE8 |                             0011 |                           000011
+                 iSTATE7 |                             0100 |                           000100
+                 iSTATE6 |                             0101 |                           000101
+                 iSTATE5 |                             0110 |                           000110
+                 iSTATE2 |                             0111 |                           000111
+                 iSTATE4 |                             1000 |                           001000
+                 iSTATE3 |                             1001 |                           001001
+                  iSTATE |                             1010 |                           001010
+                iSTATE10 |                             1011 |                           001011
+                iSTATE11 |                             1100 |                           001100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_delta_reg' using encoding 'sequential' in module 'encrypt'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 2145.535 ; gain = 778.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |blake512__GB0          |           1|     32640|
+|2     |case__98_blake512__GD  |           1|     16320|
+|3     |blake512__GB2          |           1|     32640|
+|4     |blake512__GB3          |           1|     32640|
+|5     |blake512__GB4          |           1|     32640|
+|6     |blake512__GB5          |           1|     32640|
+|7     |case__106_blake512__GD |           1|     16320|
+|8     |blake512__GB7          |           1|     32640|
+|9     |case__122_blake512__GD |           1|     16320|
+|10    |case__146_blake512__GD |           1|     16320|
+|11    |blake512__GB10         |           1|     32640|
+|12    |case__131_blake512__GD |           1|     16320|
+|13    |blake512__GB12         |           1|     32640|
+|14    |blake512__GB13         |           1|     32640|
+|15    |blake512__GB14         |           1|     32640|
+|16    |blake512__GB15         |           1|     32640|
+|17    |case__139_blake512__GD |           1|     16320|
+|18    |blake512__GB17         |           1|     32640|
+|19    |case__59_blake512__GD  |           1|     16320|
+|20    |case__75_blake512__GD  |           1|     16320|
+|21    |blake512__GB20         |           1|     32640|
+|22    |case__148_blake512__GD |           1|     16320|
+|23    |blake512__GB22         |           1|     32640|
+|24    |blake512__GB23         |           1|     32640|
+|25    |blake512__GB24         |           1|     32640|
+|26    |blake512__GB25         |           1|     32640|
+|27    |case__156_blake512__GD |           1|     16320|
+|28    |blake512__GB27         |           1|     32640|
+|29    |case__164_blake512__GD |           1|     16320|
+|30    |case__172_blake512__GD |           1|     16320|
+|31    |blake512__GB30         |           1|     33536|
+|32    |blake512__GB31         |           1|     16768|
+|33    |blake512__GB32         |           1|     33536|
+|34    |blake512__GB33         |           1|     33536|
+|35    |blake512__GB34         |           1|     33536|
+|36    |blake512__GB35         |           1|     33088|
+|37    |blake512__GB36         |           1|     16768|
+|38    |blake512__GB37         |           1|     27008|
+|39    |blake512__GB38         |           1|      7169|
+|40    |blake512__GB39         |           1|      9675|
+|41    |blake512__GB40         |           1|     13066|
+|42    |blake512__GB41         |           1|     32640|
+|43    |blake512__GB42         |           1|     16768|
+|44    |blake512__GB43         |           1|     16768|
+|45    |blake512__GB44         |           1|     32640|
+|46    |case__136_blake512__GD |           1|     16320|
+|47    |blake512__GB46         |           1|     32640|
+|48    |blake512__GB47         |           1|     32640|
+|49    |blake512__GB48         |           1|     32640|
+|50    |blake512__GB49         |           1|     32640|
+|51    |case__160_blake512__GD |           1|     16320|
+|52    |blake512__GB51         |           1|     32640|
+|53    |case__112_blake512__GD |           1|     16320|
+|54    |case__88_blake512__GD  |           1|     16320|
+|55    |blake512__GB54         |           1|     32640|
+|56    |case__143_blake512__GD |           1|     16320|
+|57    |blake512__GB56         |           1|     32640|
+|58    |blake512__GB57         |           1|     32640|
+|59    |blake512__GB58         |           1|     32640|
+|60    |blake512__GB59         |           1|     32640|
+|61    |case__111_blake512__GD |           1|     16320|
+|62    |blake512__GB61         |           1|     32640|
+|63    |case__71_blake512__GD  |           1|     16320|
+|64    |case__47_blake512__GD  |           1|     16320|
+|65    |blake512__GB64         |           1|     32640|
+|66    |case__150_blake512__GD |           1|     16320|
+|67    |case__134_blake512__GD |           1|     16320|
+|68    |blake512__GB67         |           1|     32640|
+|69    |blake512__GB68         |           1|     32640|
+|70    |case__141_blake512__GD |           1|     16320|
+|71    |blake512__GB70         |           1|     32640|
+|72    |blake512__GB71         |           1|     32640|
+|73    |case__157_blake512__GD |           1|     16320|
+|74    |blake512__GB73         |           1|     32640|
+|75    |case__45_blake512__GD  |           1|     16320|
+|76    |case__93_blake512__GD  |           1|     16320|
+|77    |blake512__GB76         |           1|     32640|
+|78    |blake512__GB77         |           1|     32640|
+|79    |case__70_blake512__GD  |           1|     16320|
+|80    |blake512__GB79         |           1|     32640|
+|81    |blake512__GB80         |           1|     32640|
+|82    |case__61_blake512__GD  |           1|     16320|
+|83    |case__53_blake512__GD  |           1|     16320|
+|84    |blake512__GB83         |           1|     32640|
+|85    |case__110_blake512__GD |           1|     16320|
+|86    |encrypt__GC0           |           1|     22754|
+|87    |TOP__GC0               |           1|      4991|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 16    
+	   2 Input     64 Bit       Adders := 16    
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 4     
++---XORs : 
+	   2 Input    512 Bit         XORs := 8     
+	   4 Input     64 Bit         XORs := 8     
+	   2 Input     64 Bit         XORs := 56    
+	  18 Input      1 Bit         XORs := 1     
++---Registers : 
+	             1024 Bit    Registers := 1     
+	              512 Bit    Registers := 7     
+	               64 Bit    Registers := 16    
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 18    
++---RAMs : 
+	             128K Bit         RAMs := 1     
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   4 Input   1024 Bit        Muxes := 1     
+	   2 Input    512 Bit        Muxes := 2     
+	   4 Input    512 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 24    
+	   2 Input     10 Bit        Muxes := 1     
+	  13 Input     10 Bit        Muxes := 1     
+	  33 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  18 Input      5 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	 256 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	  33 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+	  18 Input      1 Bit        Muxes := 10    
+	  33 Input      1 Bit        Muxes := 21    
+	  13 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    512 Bit         XORs := 1     
+	  18 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module mux2_1__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module mux2_1__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module mux2_1__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module g_function__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module mux2_1__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module g_function__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module g_function__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module g_function__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module mux2_1__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module reg_64_v01 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mux2_1__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module g_function__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module g_function__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module g_function__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module mux2_1__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module reg_64_v00 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module mux2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module g_function 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     64 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 6     
+Module reg_64_v09 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v03 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v04 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v02 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v05 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v06 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v08 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     64 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module reg_64_v07 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module round_f_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  18 Input      5 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 10    
+Module blake512 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input     64 Bit         XORs := 8     
++---Registers : 
+	              512 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module omd_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  33 Input      8 Bit        Muxes := 1     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	  33 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	  33 Input      1 Bit        Muxes := 21    
+Module mux2_1_512 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+Module ntz_i 
+Detailed RTL Component Info : 
++---Muxes : 
+	 256 Input      4 Bit        Muxes := 1     
+Module mux2_1_4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module ram16x512 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module mux4_1_1024 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input   1024 Bit        Muxes := 1     
+Module mux4_1_512__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 1     
+Module ram256x512 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
++---RAMs : 
+	             128K Bit         RAMs := 1     
+Module mux4_1_512 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 1     
+Module reg_en_1024 
+Detailed RTL Component Info : 
++---Registers : 
+	             1024 Bit    Registers := 1     
+Module reg_en_512__1 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+Module reg_en_512__2 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+Module reg_en_512__3 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+Module reg_en_512 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+Module encrypt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input    512 Bit         XORs := 7     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	  13 Input     10 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_0/s_PTXT_CTRL_reg[8]' (FDR) to 'i_0/s_PTXT_CTRL_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/s_PTXT_CTRL_reg[9]' (FDR) to 'i_0/s_PTXT_CTRL_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/s_PTXT_CTRL_reg[10]' (FDR) to 'i_0/s_PTXT_CTRL_reg[12]'
+INFO: [Synth 8-3886] merging instance 'i_0/s_PTXT_CTRL_reg[11]' (FDR) to 'i_0/s_PTXT_CTRL_reg[15]'
+INFO: [Synth 8-3886] merging instance 'i_0/s_PTXT_CTRL_reg[12]' (FDR) to 'i_0/s_PTXT_CTRL_reg[14]'
+INFO: [Synth 8-3886] merging instance 'i_0/s_PTXT_CTRL_reg[13]' (FDR) to 'i_0/s_PTXT_CTRL_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\s_PTXT_CTRL_reg[14] )
+INFO: [Synth 8-6904] The RAM "encrypt__GC0/ram_L/ram_reg" of size (depth=16 x width=512) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "encrypt__GC0/ram_L/ram_reg" of size (depth=16 x width=512) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:46 ; elapsed = 00:04:09 . Memory (MB): peak = 2191.832 ; gain = 825.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|ram256x512: | ram_reg    | 256 x 512(READ_FIRST)  | W |   | 256 x 512(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+---------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object    | Inference | Size (Depth x Width) | Primitives      | 
++-------------+---------------+-----------+----------------------+-----------------+
+|encrypt__GC0 | ram_L/ram_reg | Implied   | 16 x 512             | RAM32M16 x 37   | 
++-------------+---------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_insti_86/i_0/ram_delta/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |blake512__GB0          |           1|      1518|
+|2     |case__98_blake512__GD  |           1|       759|
+|3     |blake512__GB2          |           1|      1518|
+|4     |blake512__GB3          |           1|      1518|
+|5     |blake512__GB4          |           1|      1518|
+|6     |blake512__GB5          |           1|      1518|
+|7     |case__106_blake512__GD |           1|       759|
+|8     |blake512__GB7          |           1|      1518|
+|9     |case__122_blake512__GD |           1|       759|
+|10    |case__146_blake512__GD |           1|       759|
+|11    |blake512__GB10         |           1|      1518|
+|12    |case__131_blake512__GD |           1|       759|
+|13    |blake512__GB12         |           1|      1518|
+|14    |blake512__GB13         |           1|      1518|
+|15    |blake512__GB14         |           1|      1518|
+|16    |blake512__GB15         |           1|      1518|
+|17    |case__139_blake512__GD |           1|       759|
+|18    |blake512__GB17         |           1|      1518|
+|19    |case__59_blake512__GD  |           1|       759|
+|20    |case__75_blake512__GD  |           1|       759|
+|21    |blake512__GB20         |           1|      1518|
+|22    |case__148_blake512__GD |           1|       759|
+|23    |blake512__GB22         |           1|      1518|
+|24    |blake512__GB23         |           1|      1518|
+|25    |blake512__GB24         |           1|      1518|
+|26    |blake512__GB25         |           1|      1518|
+|27    |case__156_blake512__GD |           1|       759|
+|28    |blake512__GB27         |           1|      1518|
+|29    |case__164_blake512__GD |           1|       759|
+|30    |case__172_blake512__GD |           1|       759|
+|31    |blake512__GB30         |           1|       384|
+|32    |blake512__GB31         |           1|       192|
+|33    |blake512__GB32         |           1|       384|
+|34    |blake512__GB33         |           1|       384|
+|35    |blake512__GB34         |           1|       384|
+|36    |blake512__GB35         |           1|       951|
+|37    |blake512__GB36         |           1|       192|
+|38    |blake512__GB37         |           1|     23452|
+|39    |blake512__GB38         |           1|      1619|
+|40    |blake512__GB39         |           1|       659|
+|41    |blake512__GB40         |           1|       193|
+|42    |blake512__GB41         |           1|      1518|
+|43    |blake512__GB42         |           1|       192|
+|44    |blake512__GB43         |           1|       192|
+|45    |blake512__GB44         |           1|      1518|
+|46    |case__136_blake512__GD |           1|       759|
+|47    |blake512__GB46         |           1|      1518|
+|48    |blake512__GB47         |           1|      1518|
+|49    |blake512__GB48         |           1|      1518|
+|50    |blake512__GB49         |           1|      1518|
+|51    |case__160_blake512__GD |           1|       759|
+|52    |blake512__GB51         |           1|      1518|
+|53    |case__112_blake512__GD |           1|       759|
+|54    |case__88_blake512__GD  |           1|       759|
+|55    |blake512__GB54         |           1|      1518|
+|56    |case__143_blake512__GD |           1|       759|
+|57    |blake512__GB56         |           1|      1518|
+|58    |blake512__GB57         |           1|      1518|
+|59    |blake512__GB58         |           1|      1518|
+|60    |blake512__GB59         |           1|      1518|
+|61    |case__111_blake512__GD |           1|       759|
+|62    |blake512__GB61         |           1|      1518|
+|63    |case__71_blake512__GD  |           1|       759|
+|64    |case__47_blake512__GD  |           1|       759|
+|65    |blake512__GB64         |           1|      1518|
+|66    |case__150_blake512__GD |           1|       759|
+|67    |case__134_blake512__GD |           1|       759|
+|68    |blake512__GB67         |           1|      1518|
+|69    |blake512__GB68         |           1|      1518|
+|70    |case__141_blake512__GD |           1|       759|
+|71    |blake512__GB70         |           1|      1518|
+|72    |blake512__GB71         |           1|      1518|
+|73    |case__157_blake512__GD |           1|       759|
+|74    |blake512__GB73         |           1|      1518|
+|75    |case__45_blake512__GD  |           1|       759|
+|76    |case__93_blake512__GD  |           1|       759|
+|77    |blake512__GB76         |           1|      1518|
+|78    |blake512__GB77         |           1|      1518|
+|79    |case__70_blake512__GD  |           1|       759|
+|80    |blake512__GB79         |           1|      1518|
+|81    |blake512__GB80         |           1|      1518|
+|82    |case__61_blake512__GD  |           1|       759|
+|83    |case__53_blake512__GD  |           1|       759|
+|84    |blake512__GB83         |           1|      1518|
+|85    |case__110_blake512__GD |           1|       759|
+|86    |encrypt__GC0           |           1|     17622|
+|87    |TOP__GC0               |           1|      3254|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:57 ; elapsed = 00:04:21 . Memory (MB): peak = 2257.941 ; gain = 891.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[0]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[512]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[1]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[513]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[2]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[514]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[3]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[515]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[4]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[516]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[5]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[517]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[6]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[518]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[7]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[519]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[8]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[520]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[9]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[521]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[10]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[522]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[11]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[523]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[12]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[524]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[13]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[525]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[14]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[526]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[15]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[527]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[16]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[528]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[17]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[529]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[18]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[530]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[19]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[531]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[20]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[532]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[21]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[533]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[22]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[534]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[23]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[535]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[24]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[536]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[25]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[537]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[26]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[538]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[27]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[539]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[28]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[540]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[29]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[541]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[30]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[542]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[31]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[543]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[32]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[544]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[33]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[545]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[34]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[546]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[35]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[547]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[36]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[548]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[37]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[549]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[38]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[550]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[39]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[551]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[40]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[552]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[41]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[553]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[42]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[554]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[43]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[555]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[44]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[556]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[45]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[557]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[46]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[558]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[47]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[559]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[48]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[560]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[49]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[561]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[50]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[562]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[51]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[563]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[52]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[564]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[53]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[565]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[54]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[566]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[55]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[567]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[56]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[568]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[57]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[569]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[58]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[570]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[59]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[571]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[60]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[572]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[61]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[573]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[62]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[574]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[63]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[575]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[64]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[576]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[65]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[577]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[66]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[578]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[67]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[579]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[68]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[580]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[69]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[581]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[70]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[582]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[71]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[583]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[72]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[584]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[73]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[585]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[74]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[586]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[75]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[587]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[76]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[588]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[77]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[589]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[78]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[590]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[79]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[591]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[80]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[592]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[81]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[593]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[82]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[594]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[83]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[595]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[84]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[596]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[85]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[597]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[86]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[598]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[87]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[599]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[88]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[600]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[89]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[601]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[90]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[602]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[91]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[603]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[92]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[604]'
+INFO: [Synth 8-3886] merging instance 'encrypt_insti_86/register_msg/data_out_reg[93]' (FDRE) to 'encrypt_insti_86/register_msg/data_out_reg[605]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (encrypt_insti_86/omd_controller_inst/\CTXT_CTRL_reg[14] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:13:40 ; elapsed = 00:14:08 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|ram256x512: | ram_reg    | 256 x 512(READ_FIRST)  | W |   | 256 x 512(WRITE_FIRST) |   | R | Port A and B     | 1      | 7      |                 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+
+Distributed RAM: Final Mapping  Report
++-------------+---------------+-----------+----------------------+-----------------+
+|Module Name  | RTL Object    | Inference | Size (Depth x Width) | Primitives      | 
++-------------+---------------+-----------+----------------------+-----------------+
+|encrypt__GC0 | ram_L/ram_reg | Implied   | 16 x 512             | RAM32M16 x 37   | 
++-------------+---------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |blake512__GB30         |           1|       384|
+|2     |blake512__GB31         |           1|       192|
+|3     |blake512__GB32         |           1|       384|
+|4     |blake512__GB33         |           1|       384|
+|5     |blake512__GB35         |           1|       192|
+|6     |blake512__GB43         |           1|       192|
+|7     |blake512__GB44         |           1|       384|
+|8     |blake512__GB46         |           1|       384|
+|9     |blake512__GB47         |           1|       384|
+|10    |blake512__GB49         |           1|       384|
+|11    |case__160_blake512__GD |           1|       192|
+|12    |blake512__GB51         |           1|       384|
+|13    |case__112_blake512__GD |           1|       192|
+|14    |case__88_blake512__GD  |           1|       192|
+|15    |blake512__GB54         |           1|       384|
+|16    |case__143_blake512__GD |           1|       192|
+|17    |blake512__GB56         |           1|       384|
+|18    |blake512__GB57         |           1|       384|
+|19    |blake512__GB58         |           1|       384|
+|20    |blake512__GB59         |           1|       384|
+|21    |case__111_blake512__GD |           1|       192|
+|22    |blake512__GB61         |           1|       384|
+|23    |case__71_blake512__GD  |           1|       192|
+|24    |case__47_blake512__GD  |           1|       192|
+|25    |blake512__GB64         |           1|       384|
+|26    |case__150_blake512__GD |           1|       192|
+|27    |case__134_blake512__GD |           1|       192|
+|28    |blake512__GB68         |           1|       384|
+|29    |case__141_blake512__GD |           1|       192|
+|30    |blake512__GB70         |           1|       384|
+|31    |case__157_blake512__GD |           1|       192|
+|32    |blake512__GB73         |           1|       384|
+|33    |case__45_blake512__GD  |           1|       192|
+|34    |case__93_blake512__GD  |           1|       192|
+|35    |blake512__GB76         |           1|       384|
+|36    |blake512__GB77         |           1|       384|
+|37    |case__70_blake512__GD  |           1|       192|
+|38    |blake512__GB79         |           1|       384|
+|39    |blake512__GB80         |           1|       384|
+|40    |case__61_blake512__GD  |           1|       192|
+|41    |case__53_blake512__GD  |           1|       192|
+|42    |blake512__GB83         |           1|       384|
+|43    |case__110_blake512__GD |           1|       192|
+|44    |TOP_GT0                |           1|     16203|
+|45    |TOP_GT1                |           1|     30363|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/encrypt_inst/ram_delta/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:16:00 ; elapsed = 00:17:27 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |blake512__GB30         |           1|       128|
+|2     |blake512__GB31         |           1|        64|
+|3     |blake512__GB32         |           1|       128|
+|4     |blake512__GB33         |           1|       128|
+|5     |blake512__GB35         |           1|        64|
+|6     |blake512__GB43         |           1|        64|
+|7     |blake512__GB44         |           1|       128|
+|8     |blake512__GB46         |           1|       128|
+|9     |blake512__GB47         |           1|       128|
+|10    |blake512__GB49         |           1|       128|
+|11    |case__160_blake512__GD |           1|        64|
+|12    |blake512__GB51         |           1|       128|
+|13    |case__112_blake512__GD |           1|        64|
+|14    |case__88_blake512__GD  |           1|        64|
+|15    |blake512__GB54         |           1|       128|
+|16    |case__143_blake512__GD |           1|        64|
+|17    |blake512__GB56         |           1|       128|
+|18    |blake512__GB57         |           1|       128|
+|19    |blake512__GB58         |           1|       128|
+|20    |blake512__GB59         |           1|       128|
+|21    |case__111_blake512__GD |           1|        64|
+|22    |blake512__GB61         |           1|       128|
+|23    |case__71_blake512__GD  |           1|        64|
+|24    |case__47_blake512__GD  |           1|        64|
+|25    |blake512__GB64         |           1|       128|
+|26    |case__150_blake512__GD |           1|        64|
+|27    |case__134_blake512__GD |           1|        64|
+|28    |blake512__GB68         |           1|       128|
+|29    |case__141_blake512__GD |           1|        64|
+|30    |blake512__GB70         |           1|       128|
+|31    |case__157_blake512__GD |           1|        64|
+|32    |blake512__GB73         |           1|       128|
+|33    |case__45_blake512__GD  |           1|        64|
+|34    |case__93_blake512__GD  |           1|        64|
+|35    |blake512__GB76         |           1|       128|
+|36    |blake512__GB77         |           1|       128|
+|37    |case__70_blake512__GD  |           1|        64|
+|38    |blake512__GB79         |           1|       128|
+|39    |blake512__GB80         |           1|       128|
+|40    |case__61_blake512__GD  |           1|        64|
+|41    |case__53_blake512__GD  |           1|        64|
+|42    |blake512__GB83         |           1|       128|
+|43    |case__110_blake512__GD |           1|        64|
+|44    |TOP_GT0                |           1|      6501|
+|45    |TOP_GT1                |           1|     10379|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance encrypt_inst/ram_delta/ram_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:16:06 ; elapsed = 00:17:33 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:16:06 ; elapsed = 00:17:33 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:16:09 ; elapsed = 00:17:36 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:16:09 ; elapsed = 00:17:37 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:16:10 ; elapsed = 00:17:38 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:16:11 ; elapsed = 00:17:38 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY8   |   354|
+|3     |LUT1     |     1|
+|4     |LUT2     |   785|
+|5     |LUT3     |  1500|
+|6     |LUT4     |  2728|
+|7     |LUT5     |  2963|
+|8     |LUT6     |  7512|
+|9     |MUXF7    |    64|
+|10    |RAM32M16 |    37|
+|11    |RAMB18E2 |     1|
+|12    |RAMB36E2 |     7|
+|13    |FDRE     |  5302|
+|14    |FDSE     |     1|
+|15    |IBUF     |     4|
+|16    |OBUF     |     2|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------+-------------------+------+
+|      |Instance                    |Module             |Cells |
++------+----------------------------+-------------------+------+
+|1     |top                         |                   | 21262|
+|2     |  encrypt_inst              |encrypt            | 20632|
+|3     |    blake512_inst           |blake512           |  8802|
+|4     |      controller            |round_f_controller |  1823|
+|5     |      g00_function          |g_function         |   522|
+|6     |      g01_function          |g_function_3       |   529|
+|7     |      g02_function          |g_function_4       |   291|
+|8     |      g03_function          |g_function_5       |   464|
+|9     |      g04_function          |g_function_6       |   541|
+|10    |      g05_function          |g_function_7       |   566|
+|11    |      g06_function          |g_function_8       |   567|
+|12    |      g07_function          |g_function_9       |   566|
+|13    |      register_64_v00       |reg_64_v00         |    66|
+|14    |      register_64_v01       |reg_64_v01         |    66|
+|15    |      register_64_v02       |reg_64_v02         |    66|
+|16    |      register_64_v03       |reg_64_v03         |    66|
+|17    |      register_64_v04       |reg_64_v04         |   189|
+|18    |      register_64_v05       |reg_64_v05         |   188|
+|19    |      register_64_v06       |reg_64_v06         |   189|
+|20    |      register_64_v07       |reg_64_v07         |   188|
+|21    |      register_64_v08       |reg_64_v08         |   128|
+|22    |      register_64_v09       |reg_64_v09         |   190|
+|23    |      register_64_v10       |reg_64_v10         |   188|
+|24    |      register_64_v11       |reg_64_v11         |   128|
+|25    |      register_64_v12       |reg_64_v12         |    64|
+|26    |      register_64_v13       |reg_64_v13         |    64|
+|27    |      register_64_v14       |reg_64_v14         |    64|
+|28    |      register_64_v15       |reg_64_v15         |    64|
+|29    |    mux_msg_blake           |mux4_1_1024        |  1024|
+|30    |    mux_wr_data_ram_delta   |mux4_1_512         |   512|
+|31    |    omd_controller_inst     |omd_controller     |  5618|
+|32    |    ram_L                   |ram16x512          |   558|
+|33    |    ram_delta               |ram256x512         |     8|
+|34    |    register_ctxt           |reg_en_512         |   512|
+|35    |    register_delta_NONCE    |reg_en_512_0       |   512|
+|36    |    register_delta_NONCE_00 |reg_en_512_1       |  1024|
+|37    |    register_msg            |reg_en_1024        |   896|
+|38    |    register_tage           |reg_en_512_2       |  1056|
++------+----------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:16:11 ; elapsed = 00:17:38 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:15:58 ; elapsed = 00:17:32 . Memory (MB): peak = 3818.434 ; gain = 2245.535
+Synthesis Optimization Complete : Time (s): cpu = 00:16:11 ; elapsed = 00:17:40 . Memory (MB): peak = 3818.434 ; gain = 2451.770
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 460 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3818.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 42 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 37 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+295 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:16:26 ; elapsed = 00:17:57 . Memory (MB): peak = 3818.434 ; gain = 3462.551
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3818.434 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/2019/OMD/template/template.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 10 11:22:37 2019...

@@ -1,0 +1,40 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../template.srcs/sources_1/new/OMD.vhd" \
+"../../../../template.srcs/sources_1/new/blake512.vhd" \
+"../../../../template.srcs/sources_1/new/compute_L_and_TAG_A.vhd" \
+"../../../../template.srcs/sources_1/new/encrypt.vhd" \
+"../../../../template.srcs/sources_1/imports/new/g_function_1.vhd" \
+"../../../../template.srcs/sources_1/imports/new/mux2_1.vhd" \
+"../../../../template.srcs/sources_1/new/mux2_1_1024.vhd" \
+"../../../../template.srcs/sources_1/new/mux2_1_512.vhd" \
+"../../../../template.srcs/sources_1/new/ntz_i.vhd" \
+"../../../../template.srcs/sources_1/new/omd_controller.vhd" \
+"../../../../template.srcs/sources_1/imports/new/perm.vhd" \
+"../../../../template.srcs/sources_1/new/ram16x1024.vhd" \
+"../../../../template.srcs/sources_1/new/ram16x512.vhd" \
+"../../../../template.srcs/sources_1/new/ram256x512.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v00.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v01.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v02.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v03.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v04.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v05.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v06.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v07.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v08.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v09.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v10.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v11.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v12.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v13.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v14.vhd" \
+"../../../../template.srcs/sources_1/imports/new/reg_64_v15.vhd" \
+"../../../../template.srcs/sources_1/new/reg_en_1024.vhd" \
+"../../../../template.srcs/sources_1/new/reg_en_512.vhd" \
+"../../../../template.srcs/sources_1/new/reg_en_tag_a.vhd" \
+"../../../../template.srcs/sources_1/imports/new/round_f_controller.vhd" \
+"../../../../template.srcs/sim_1/new/tb_OMD.vhd" \
+
+# Do not sort compile order
+nosort

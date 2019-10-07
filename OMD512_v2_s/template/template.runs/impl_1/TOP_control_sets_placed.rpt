@@ -1,0 +1,100 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Sep 10 11:26:55 2019
+| Host         : DESKTOP-5OITMAE running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xcvu9p
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    22 |
+|    Minimum number of control sets                        |    22 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    13 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    22 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    12 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             512 |           37 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             564 |           85 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            4227 |         1072 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                               Enable Signal                              | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/READY_i_1_n_0                           | rst_IBUF_inst/O  |                1 |              1 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/count_busy_blake                        | rst_IBUF_inst/O  |                1 |              4 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/sel_mux_blake[1]_i_1_n_0                | rst_IBUF_inst/O  |                4 |              4 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/reg_en_delta_NONCE_00_reg_8[0]          | rst_IBUF_inst/O  |                1 |              4 |
+|  clk_IBUF_BUFG | encrypt_inst/blake512_inst/controller/FSM_sequential_state[4]_i_1__0_n_0 | rst_IBUF_inst/O  |                1 |              5 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/FSM_sequential_state[5]_i_1_n_0         | rst_IBUF_inst/O  |                4 |              6 |
+|  clk_IBUF_BUFG | encrypt_inst/wr_addr_ram_delta                                           | rst_IBUF_inst/O  |                3 |              8 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/CTXT_CTRL[7]_i_1_n_0                    | rst_IBUF_inst/O  |                1 |              8 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/rd_addr_ram_delta_temp[7]_i_1_n_0       | rst_IBUF_inst/O  |                3 |              8 |
+|  clk_IBUF_BUFG | encrypt_inst/delta_NONCE_counter                                         | rst_IBUF_inst/O  |                3 |             10 |
+|  clk_IBUF_BUFG | encrypt_inst/sel_mux_wr_data_ram_delta                                   | rst_IBUF_inst/O  |                9 |             16 |
+|  clk_IBUF_BUFG | encrypt_inst/blake512_inst/controller/round_temp                         | rst_IBUF_inst/O  |               30 |             57 |
+|  clk_IBUF_BUFG |                                                                          |                  |               37 |            512 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/start_compute_delta_NONCE               | rst_IBUF_inst/O  |              172 |            512 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/E[0]                                    | rst_IBUF_inst/O  |              335 |            512 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/reg_en_ctxt_reg_0[0]                    | rst_IBUF_inst/O  |              124 |            512 |
+|  clk_IBUF_BUFG | encrypt_inst/omd_controller_inst/reg_en_tage_reg_0[0]                    | rst_IBUF_inst/O  |              120 |            512 |
+|  clk_IBUF_BUFG | encrypt_inst/en                                                          | rst_IBUF_inst/O  |              159 |            512 |
+|  clk_IBUF_BUFG | encrypt_inst/blake512_inst/controller/ready_temp                         | rst_IBUF_inst/O  |              296 |            512 |
+|  clk_IBUF_BUFG |                                                                          | rst_IBUF_inst/O  |               85 |            564 |
+|  clk_IBUF_BUFG | PTXT_DATA_VALID                                                          |                  |               37 |            592 |
+|  clk_IBUF_BUFG | encrypt_inst/blake512_inst/controller/E[0]                               | rst_IBUF_inst/O  |              409 |           1024 |
++----------------+--------------------------------------------------------------------------+------------------+------------------+----------------+
+
+
